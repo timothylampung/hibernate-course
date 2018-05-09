@@ -1,5 +1,7 @@
 package com.infiniteskills.data;
 
+import com.infiniteskills.data.entities.Attendance;
+import com.infiniteskills.data.entities.StudentImpl;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
@@ -14,6 +16,8 @@ public class HibernateUtil {
 		try {
 			Configuration configuration = new Configuration();
 			configuration.addAnnotatedClass(UserImpl.class);
+			configuration.addAnnotatedClass(StudentImpl.class);
+			configuration.addAnnotatedClass(Attendance.class);
 			return configuration
 					.buildSessionFactory(new StandardServiceRegistryBuilder()
 							.build());

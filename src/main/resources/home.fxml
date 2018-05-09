@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.infiniteskills.data.UI.home.HomeController">
+  <children>
+    <VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <HBox alignment="CENTER" prefHeight="400.0" prefWidth="100.0">
+          <children>
+            <Pane prefHeight="400.0" prefWidth="527.0">
+              <children>
+                <Label fx:id="name" layoutX="7.0" layoutY="107.0" text="Dear Name," />
+                <Label fx:id="content" layoutX="0.0" layoutY="135.0" text="You are cordially invited to the Forum with Alumni on the 21th April 2018" />
+                <Button fx:id="reject" cancelButton="true" defaultButton="false" layoutX="269.0" layoutY="306.0" mnemonicParsing="false" text="REJECT" />
+                <Button fx:id="accept" defaultButton="true" layoutX="355.0" layoutY="306.0" mnemonicParsing="false" text="ACCEPT" />
+                <Label fx:id="feed" alignment="CENTER" contentDisplay="CENTER" layoutX="0.0" layoutY="190.0" prefWidth="527.0" text="Label" textFill="RED" visible="false" />
+                <Label fx:id="view" layoutX="380.0" layoutY="26.0" onMouseClicked="#nextPage" text="View Who's Coming" textFill="#10cc00" />
+              </children>
+            </Pane>
+          </children>
+        </HBox>
+      </children>
+    </VBox>
+  </children>
+</AnchorPane>
