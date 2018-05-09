@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.infiniteskills.data.UI.login.LoginController">
+   <children>
+      <Pane prefHeight="Infinity" prefWidth="Infinity" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="286.0" layoutY="113.0" text="LOGIN" />
+            <TextField fx:id="usernameTF" layoutX="229.0" layoutY="147.0" onInputMethodTextChanged="#reset" onKeyPressed="#reset" onKeyReleased="#reset" onKeyTyped="#reset" promptText="Username" />
+            <PasswordField id="passwordTF" fx:id="passwordTF" layoutX="229.0" layoutY="188.0" onAction="#reset" onInputMethodTextChanged="#reset" onKeyPressed="#reset" onKeyReleased="#reset" onKeyTyped="#reset" promptText="Password" />
+            <ProgressIndicator fx:id="load" layoutX="274.0" layoutY="52.0" visible="false" />
+            <Button fx:id="loginBTB" defaultButton="true" layoutX="228.0" layoutY="223.0" mnemonicParsing="false" onAction="#login" prefHeight="25.0" prefWidth="149.0" text="LOGIN" />
+            <Label layoutX="253.0" layoutY="256.0" text="Register new user" textFill="#862ded" />
+            <Label fx:id="nameValid" layoutX="392.0" layoutY="151.0" text="Required !" textFill="#ff0101" visible="false" />
+            <Label fx:id="passValid" layoutX="392.0" layoutY="192.0" text="Required !" textFill="RED" visible="false" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
